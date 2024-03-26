@@ -1,0 +1,11 @@
+<form action="/users" method="get">
+    <h1>Пользователи</h1>
+    <?php foreach ($users as $user => $options): ?>
+        <div>
+            <h2><?= $user ?></h2>
+            <p><?= $options['nickname'] ?></p>
+            <p><?= $options['email'] ?></p>
+            <p><?= $options['id'] ?></p>
+        </div>
+    <?php endforeach; ?>
+</form>
